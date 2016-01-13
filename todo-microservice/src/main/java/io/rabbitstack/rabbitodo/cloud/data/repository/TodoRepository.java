@@ -1,0 +1,14 @@
+package io.rabbitstack.rabbitodo.cloud.data.repository;
+
+import io.rabbitstack.rabbitodo.cloud.data.Todo;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+/**
+ * The mongo repository for <code>Todo</code> documents. It gives us
+ * the basic CRUD operations out of the box.
+ *
+ * @author Nedim Sabic
+ */
+public interface TodoRepository extends MongoRepository<Todo, String> {
+
+}
